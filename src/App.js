@@ -28,29 +28,29 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
+  title: '',
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random',
+    "",
+  image: 'https://www.who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/mb-sun-exposure.tmb-1920v.jpg',
   imgText: 'main image description',
   linkText: 'Continue reading…',
 };
 
 const featuredPosts = [
   {
-    title: 'Featured post',
-    date: 'Nov 12',
+    title: 'Should I wear a facemask?',
+    date: 'April 5th',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random',
+      'Everyone should wear a cloth face cover when they have to go out in public, for example to the grocery store or to pick up other necessities.',
+    image: 'https://www.cdc.gov/coronavirus/2019-ncov/images/prevent-getting-sick/cloth-face-cover.png',
     imageText: 'Image Text',
   },
   {
-    title: 'Post title',
-    date: 'Nov 11',
+    title: 'Washing hands is important',
+    date: 'April 3rd',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random',
+      'Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.',
+    image: 'https://www.cdc.gov/coronavirus/2019-ncov/images/protect-wash-hands.png',
     imageText: 'Image Text',
   },
 ];
