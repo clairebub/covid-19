@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
 const sections = [
   { title: 'COVID-19', url: '#' },
+  { title: 'Culture', url: '#' },
   { title: 'About', url: '#' },
 ];
 
