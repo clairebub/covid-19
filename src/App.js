@@ -23,16 +23,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
-  { title: 'Technology', url: '#' },
-  { title: 'Design', url: '#' },
-  { title: 'Culture', url: '#' },
-  { title: 'Business', url: '#' },
-  { title: 'Politics', url: '#' },
-  { title: 'Opinion', url: '#' },
-  { title: 'Science', url: '#' },
-  { title: 'Health', url: '#' },
-  { title: 'Style', url: '#' },
-  { title: 'Travel', url: '#' },
+  { title: 'COVID-19', url: '#' },
+  { title: 'About', url: '#' },
 ];
 
 const mainFeaturedPost = {
@@ -87,7 +79,7 @@ export default function App() {
 
   return (
     <React.Fragment>
-      <CssBaseline />
+      <CssBaseline /> 
       <Container maxWidth="lg">
         <Header title="Trust Or Not" sections={sections} />
         <main>
@@ -108,7 +100,7 @@ export default function App() {
           </Grid>
         </main>
       </Container>
-      <Footer title="Footer" description="Something here to give the footer a purpose!" />
+      <Footer title="" description="" />
     </React.Fragment>
   );
 }
