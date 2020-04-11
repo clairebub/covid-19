@@ -7,6 +7,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import { TextField } from '@material-ui/core';
+import { Link as RouterLink, Router } from 'react-router-dom'
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -51,7 +52,18 @@ export default function Header(props) {
       </Toolbar>
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
         {sections.map((section) => (
-          <Link
+           <RouterLink to={section.title}> 
+             {section.title}
+           </RouterLink>
+   
+        ))}
+      </Toolbar>
+    </React.Fragment>
+  );
+}
+
+/*
+       <Link
             color="inherit"
             noWrap
             key={section.title}
@@ -61,12 +73,7 @@ export default function Header(props) {
           >
             {section.title}
           </Link>
-        ))}
-      </Toolbar>
-    </React.Fragment>
-  );
-}
-
+          */
 Header.propTypes = {
   sections: PropTypes.array,
   title: PropTypes.string,
