@@ -6,13 +6,8 @@ import Container from '@material-ui/core/Container';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu'
-
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
@@ -23,17 +18,17 @@ import post1 from "./blog-post.1.md";
 import post2 from "./blog-post.2.md";
 import post3 from "./blog-post.3.md";
 
+
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
     marginTop: theme.spacing(3),
   },
+  heroMedia: {
+    height: 400,
+    paddingTop: '56.25%', // 16:9
+  },
 }));
 
-const sections = [
-  { title: 'COVID-19', url: '#' },
-  { title: 'Culture', url: '#' },
-  { title: 'About', url: '#' },
-];
 
 const mainFeaturedPost = {
   title: '',
@@ -74,10 +69,6 @@ const sidebar = {
   description:
     'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
   archives: [
-    { title: 'March 2020', url: '#' },
-    { title: 'February 2020', url: '#' },
-    { title: 'January 2020', url: '#' },
-    { title: 'November 2019', url: '#' },
   ],
   social: [
     { name: 'Twitter', icon: TwitterIcon },
@@ -95,6 +86,11 @@ export default function App() {
       <CssBaseline /> 
       <Container maxWidth="lg">
         <Header />
+        <Card>
+          <CardMedia 
+            className={classes.heroMedia}
+            image="/images/mb-sun-exposure.jpg" />
+        </Card>
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>

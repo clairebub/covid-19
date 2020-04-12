@@ -46,17 +46,22 @@ export default function MainFeaturedPost(props) {
       <div className={classes.overlay} />
       <Grid container>
         <Grid item md={6}>
+            {/*
           <div className={classes.mainFeaturedPostContent}>
+                      
             <Typography component="h1" variant="h3" color="inherit" gutterBottom>
               {post.title}
             </Typography>
+
             <Typography variant="h5" color="inherit" paragraph>
               {post.description}
-            </Typography>
+  </Typography> 
             <Link variant="subtitle1" href="#">
               {post.linkText}
-            </Link>
+            </Link> 
+
           </div>
+                      */}
         </Grid>
       </Grid>
     </Paper>
