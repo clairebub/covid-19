@@ -1,80 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import {Tabs, Tab} from '@material-ui/core';
+import {AppBar, Toolbar, IconButton, Typography, Link} from '@material-ui/core';
 import { TextField } from '@material-ui/core';
+import SearchIcon from '@material-ui/icons/Search';
 import { Link as RouterLink, Router } from 'react-router-dom'
 
-const useStyles = makeStyles((theme) => ({
-  toolbar: {
-    borderBottom: `1px solid ${theme.palette.divider}`,
-  },
-  toolbarTitle: {
-    flex: 1,
-  },
-  toolbarSecondary: {
-    justifyContent: 'space-between',
-    overflowX: 'auto',
-  },
-  toolbarLink: {
-    padding: theme.spacing(1),
-    flexShrink: 0,
-  },
-}));
-
 export default function Header(props) {
-  const classes = useStyles();
-  const { sections, title } = props;
 
   return (
     <React.Fragment>
-      <Toolbar className={classes.toolbar}>
-        <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          className={classes.toolbarTitle}
-        >
-          {title}
-        </Typography>
-        <TextField variant="outlined" size="small">
-          Search
-        </TextField>
-        <IconButton>
-          <SearchIcon />
-        </IconButton>
-      </Toolbar>
-      <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
-        {sections.map((section) => (
-           <RouterLink to={section.title}> 
-             {section.title}
-           </RouterLink>
-   
-        ))}
-      </Toolbar>
+      <Tabs>
+        <RouterLink to="/">
+          <Tab label="Home" />
+        </RouterLink>
+        <RouterLink to="/factcheck">
+          <Tab label="Fact Check" />
+        </RouterLink>
+        <RouterLink to="/culture">
+          <Tab label="Culture" />
+        </RouterLink>
+        <RouterLink to="/donationmatch">
+          <Tab label="Donation Matching" />
+        </RouterLink>
+        <RouterLink to="/blogs">
+          <Tab label="Blogs" />
+        </RouterLink>
+        <RouterLink to="/about">
+          <Tab label="About" />
+        </RouterLink>
+      </Tabs>
     </React.Fragment>
   );
 }
-
-/*
-       <Link
-            color="inherit"
-            noWrap
-            key={section.title}
-            variant="body2"
-            href={section.url}
-            className={classes.toolbarLink}
-          >
-            {section.title}
-          </Link>
-          */
-Header.propTypes = {
-  sections: PropTypes.array,
-  title: PropTypes.string,
-};

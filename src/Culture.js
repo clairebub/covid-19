@@ -79,7 +79,7 @@ const sidebar = {
   ],
 };
 
-export default function App() {
+export default function Culture() {
   const classes = useStyles();
 
   return (

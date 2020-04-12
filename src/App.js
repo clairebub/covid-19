@@ -6,6 +6,13 @@ import Container from '@material-ui/core/Container';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu'
+
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
@@ -83,11 +90,11 @@ export default function App() {
   const classes = useStyles();
 
   return (
+
     <React.Fragment>
       <CssBaseline /> 
-      <h1> hello </h1>
       <Container maxWidth="lg">
-        <Header title="Public Health Without Borders" sections={sections} />
+        <Header />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
