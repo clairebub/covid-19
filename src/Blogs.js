@@ -67,32 +67,31 @@ export default function Blogs() {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="lg">
-                <Header />
-                <main>
-                        <Grid container spacing={5} className={classes.mainGrid}>
-                            <Main title="what do we title lmao" posts={posts} />
+          <Header />
+          <main>
+            <Grid container spacing={5} className={classes.mainGrid}>
+              <Main title="Recent articles" posts={posts} />
                             />
                             </Grid>
-                </main>
+          </main>
 
-                <CardMedia
-                component='iframe'
-                height="150"
-                title=':('
-                src='https://www.youtube.com/watch?v=hE1enPDh3nM'
-    />
-                
-                <Paper variant="outlined">
-                    <Typography>
-                    <Link href="https://www.youtube.com/watch?v=hE1enPDh3nM">
-                        {'Link to full video on youtube'}
-                    </Link>
-                    </Typography>
-                </Paper>
-                
-                </Container>
+          <CardMedia
+            component='iframe'
+            height="550"
+            title=':('
+            src='https://www.youtube.com/embed/hE1enPDh3nM'
+          />
+
+          <Paper variant="outlined">
+            <Typography>
+              <Link href="https://www.youtube.com/watch?v=hE1enPDh3nM">
+                {'Link to full video on youtube'}
+              </Link>
+            </Typography>
+          </Paper>
+
+        </Container>
         <Footer title="" description="" />
-        </React.Fragment> 
+      </React.Fragment>
     );
-    
 }
