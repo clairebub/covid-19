@@ -71,8 +71,7 @@ export default function Blogs() {
           <main>
             <Grid container spacing={5} className={classes.mainGrid}>
               <Main title="Recent articles" posts={posts} />
-                            />
-                            </Grid>
+            </Grid>
           </main>
 
           <CardMedia
