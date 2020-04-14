@@ -65,13 +65,6 @@ export default function FactCheck() {
             <CssBaseline />
             <Container maxWidth="lg">
                 <Header />
-                <Paper>
-                    <Card className={classes.card}>
-                        <CardMedia
-                            className={classes.heroMedia}
-                            image="/images/mb-sun-exposure.jpg" />
-                    </Card>
-                </Paper>
                 <Paper className={classes.paper}>
                     <Grid container spacing={2}>
                         <Grid item>
@@ -89,6 +82,16 @@ export default function FactCheck() {
                         </Grid>
                         <Grid item xs>
                             <Typography noWrap>world</Typography>
+                        </Grid>
+                    </Grid>
+                </Paper>
+                <Paper className={classes.paper}>
+                    <Grid container spacing={2}>
+                        <Grid item>
+                            <Avatar>CL</Avatar>
+                        </Grid>
+                        <Grid item xs>
+                            <Typography noWrap>holu smoke, this is the best scam etver</Typography>
                         </Grid>
                     </Grid>
                 </Paper>
