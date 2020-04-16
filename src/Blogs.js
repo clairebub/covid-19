@@ -12,12 +12,8 @@ import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Main from './Main';
 import post4 from "./blog-post.4.md";
+import post5 from "./blog-post.5.md";
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import CardContent from '@material-ui/core/CardContent';
-import IconButton from '@material-ui/core/IconButton';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -43,6 +39,11 @@ const useStyles = makeStyles((theme) => ({
       height: 38,
       width: 38,
     },
+    media: {           // this is the`className` passed to `CardMedia` later
+    height: 5,     // as an example I am modifying width and height
+    width: '100%',
+    marginLeft: '33%'
+  },
   }));
 
 //const useStyles = makeStyles((theme) => ({
@@ -61,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
     post4,
   ];
 
+  const posts2 = [
+      post5,
+  ]
+
 export default function Blogs() {
     const classes = useStyles();
     return (
@@ -76,7 +81,8 @@ export default function Blogs() {
 
           <CardMedia
             component='iframe'
-            height="550"
+            height="400"
+            width= "600"
             title=':('
             src='https://www.youtube.com/embed/hE1enPDh3nM'
           />
@@ -88,6 +94,29 @@ export default function Blogs() {
               </Link>
             </Typography>
           </Paper>
+
+          <main>
+            <Grid container spacing={5} className={classes.mainGrid}>
+              <Main title="" posts={posts2} />
+            </Grid>
+          </main>
+
+
+          <Paper variant="outlined">
+            <Typography>
+              <Link href="https://www.youtube.com/watch?v=huTUOek4LgU">
+                {'Link to full video on youtube'}
+              </Link>
+            </Typography>
+          </Paper>
+          
+          <CardMedia
+            component='iframe'
+            height="400"
+            width= "600"
+            title=':('
+            src='https://www.youtube.com/embed/huTUOek4LgU'
+          />
 
         </Container>
         <Footer title="" description="" />
