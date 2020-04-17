@@ -16,13 +16,13 @@ export default function Header(props) {
           <Tab label="Home" />
         </RouterLink>
         <RouterLink to="/factcheck">
-          <Tab label="Fact Check" />
+          <Tab label="Facts" />
         </RouterLink>
         <RouterLink to="/culture">
           <Tab label="Culture" />
         </RouterLink>
         <RouterLink to="/donationmatch">
-          <Tab label="Donation Matching" />
+          <Tab label="Donations" />
         </RouterLink>
         <RouterLink to="/blogs">
           <Tab label="Blogs" />
