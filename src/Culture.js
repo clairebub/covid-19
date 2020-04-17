@@ -14,8 +14,8 @@ export default function Culture() {
                 <Paper variant="outlined">
                 There is no single best response to COVID-19. 
                 What worked in China — a highly centralized and authoritarian 
-                country that deployed drones to monitor its citizens — l
-                ikely will not work in Norway or the U.S. 
+                country that deployed drones to monitor its citizens — 
+                likely will not work in Norway or the U.S. 
                 
                 Different countries will need to manage the pandemic with methods that 
                 are generally effective, but specifically suited to their culture, 
@@ -27,7 +27,9 @@ export default function Culture() {
                 modern technologies in tracking chains of transmission.
 
                 Akin to air pollution and climate change, pandemics don’t respect national borders. 
-                Countries need to connect their individual actions with much broader international cooperation.
+                Countries need to connect their individual actions with much 
+                broader international cooperation. Let us be mindful about the culture 
+                differences and promote the best practices from different countries.
                 
               </Paper>
             </Container>

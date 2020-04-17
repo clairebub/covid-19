@@ -12,7 +12,16 @@ export default function About() {
             <Container maxWidth="lg">
                 <Header />
                 <Paper variant="outlined">
-                    To be built, the about tab that introduce our mission and the team
+                Public Health Without Borders is an organization dedicated 
+                to informing people on the truth about COVID-19, promoting 
+                best practices from different cultures around the world, 
+                matching their donations with the organizations that need it 
+                most, understanding people’s concerns, and spreading positive 
+                stories of what people are doing in these difficult times. 
+                We believe that through uniting our effort and promoting 
+                positive actions, we can give hope and come out of this 
+                crisis stronger than before.
+
               </Paper>
             </Container>
             <Footer title="" description="" />
