@@ -12,6 +12,8 @@ export default function About() {
             <Container maxWidth="lg">
                 <Header />
                 <Paper variant="outlined">
+                Misssion Statement: 
+                
                 Public Health Without Borders is an organization dedicated 
                 to informing people on the truth about COVID-19, promoting 
                 best practices from different cultures around the world, 
